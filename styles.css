@@ -8,8 +8,17 @@
     --btn-border-radius: 4px;
     --blue-text:#102770;
     --btn-height:2.8rem;
+    --blue-professional:#146ef5
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
 
+html {
+	/*scrollbar-width: none; */ /* firefox */
+	/*scroll-behavior: smooth;*/
+}
 
 body {
     margin:0;
@@ -20,7 +29,7 @@ body {
   }
 
   nav {
-    position:fixed;
+    position:sticky;
     top:0;
     width:100%;
     background:var(--white);
@@ -31,6 +40,17 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  nav > #scrollbar{
+    position: absolute;
+    bottom: 0 ;
+    left: 0 ;
+    height: 4px;
+    width: .6rem;
+    background-color: var(--blue-professional);
+    transition: left .3s ease-out;
+    border-radius: 3px
+    }
   
   header#website_title{
     margin-left:2rem;
@@ -58,7 +78,6 @@ body {
 	transform: translatey(3rem);
 	transition: transform 0.5s;
   	margin-right:.3rem;
-  	opacity: 0;
 }
 
 
@@ -81,8 +100,15 @@ body {
 
 
   .content {
-    margin:20px;
-    padding-top:4rem;
+    padding:4rem;
+  }
+
+  section{
+    padding-top: 1rem;
+  }
+
+  p{
+    padding-top: 1rem;
   }
 
 
@@ -122,12 +148,15 @@ body {
   border-color: #4a4a4a;
     border-color: #fff;
   outline: 0;
+  outline: none;
+  box-shadow: none;
 }
 
 .button-60:focus {
   border-color: #485fc7;
   border-color:#fff;
-  outline: 0;
+  outline: none;
+  box-shadow: none;
 }
 
 .button-60:hover {
