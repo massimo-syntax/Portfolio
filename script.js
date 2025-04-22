@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	  ease: "back.out(1.7)",
 	  stagger: 0.3,
 	});
+	
+	gsap.to('nav > #scrollbar', {
+	  duration: 1,
+	  opacity:1,
+	  y:0,
+	  //rotateY: 1440,
+	  ease: "ease.out"
+	});
 
 
 	let timeLast = Date.now()
@@ -69,7 +77,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	const _scrollbar = d("#scrollbar")
 	scrollbar.style.left = btns[0].offsetLeft + "px"
-	scrollbar.style.bottom = "1px"//btns[0].offsetTop + btns[0].offsetHeight + "px"
+	
+	//scrollbar.style.bottom = "1px"//btns[0].offsetTop + btns[0].offsetHeight + "px"
 
 	let farFromTopRatio = 0.00
 	let pxFromRatio = 0
@@ -80,9 +89,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	window.addEventListener("scroll", (event) => {
 		// the browser can rest some milliseconds before next calculation
 		time = Date.now()
+		// top window + navbar does not directly overlap tops[i]
+		scroll = window.scrollY + navbarHeight + 30; 
+
 		if( time > timeLast + 200 ){
-			// top window + navbar does not directly overlap tops[i]
-			scroll = window.scrollY + navbarHeight + 30; 
 			for(i = 0 ; i < sections.length ; i++ ){
 
 				if(scroll > tops[i] && scroll < tops[i]+heights[i]){
