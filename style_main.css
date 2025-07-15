@@ -16,7 +16,7 @@
   }
 
 html {
-	/*scrollbar-width: none; */ /* firefox */
+	/*scrollbar-width: none;  /* firefox */
 	/*scroll-behavior: smooth;*/
 }
 
@@ -32,13 +32,14 @@ body {
     position:sticky;
     top:0;
     width:100%;
-    background:var(--white);
-    border-bottom: 2px dashed var(--very-light-green);
+    background:#fffd;
+    border-bottom: 2px solid var(--white);
     margin:0;
     padding:1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   nav > #scrollbar{

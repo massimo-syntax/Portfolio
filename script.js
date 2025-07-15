@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		scroll = window.scrollY + navbarHeight + 30; 
 
 		if( time > timeLast + 200 ){
-			for(i = 0 ; i < sections.length ; i++ ){
+			for(let i = 0 ; i < sections.length ; i++ ){
 
 				if(scroll > tops[i] && scroll < tops[i]+heights[i]){
 					inscroll = scroll - tops[i]
