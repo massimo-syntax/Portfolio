@@ -1,15 +1,20 @@
 
-        #header{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        #charsGraficElement{
-            width: 100vw;
-            height: 100vh;
-            font-family: monospace;
-            color: white;
-            background-color: black;
-            font-size: .8rem;
-        }
+/* styles for the char grafic header*/
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#charsGraficElement{
+    width: 100vw;
+    height: 90vh;
+    font-family: monospace;
+    color: white;
+    background-color: #000;
+    font-size: .8rem;
+}   

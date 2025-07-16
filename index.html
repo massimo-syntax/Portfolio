@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fonts -->
+ 
   <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <!--normalize css-->
@@ -41,10 +43,10 @@ data-scroll-velocity="0">
 
     <div class="nav__btn-container">
 
-
-      <button id="section1Btn" class="button-60 box-reveal scroll-to" role="button">Portfolio</button>
-      <button id="section2Btn" class="button-60 box-reveal scroll-to" role="button">Info</button>
-      <button id="section3Btn" class="button-60 box-reveal scroll-to" role="button">Über_mich</button>
+      <button id="" class="button-60 box-reveal scroll-to" role="button">header</button>
+      <button id="" class="button-60 box-reveal scroll-to" role="button">Portfolio</button>
+      <button id="" class="button-60 box-reveal scroll-to" role="button">Info</button>
+      <button id="" class="button-60 box-reveal scroll-to" role="button">Über_mich</button>
 
 
       <div class="sec-center box-reveal">
@@ -64,13 +66,28 @@ data-scroll-velocity="0">
   </nav>
 
   
-  <header id="header">
-    <span id="charsGraficElement">
-        hello
-    </span>
-  </header>
-
-
+      <header id="header" class="vanillaJsScroll">
+        <span id="charsGraficElement">
+            <!-- here is the grafic engine of chars-->
+        </span>
+        <div id="header-overlay">
+          <figure id="header_image_wrapper">
+            <img src="me_main_picture.jpg" alt="das ist ich, ein sehr guter Mobile Entwickler">
+            <figcaption>
+            <h2> Massimo Ganzerli </h2>
+            <h4> Ich codiere als Hobby seit jahren nun, Jetzt suche ich einen Job als Android Entwickler </h4>
+            </figcaption>
+          </figure>
+        </div>
+        <span id="spacesheeps_buttons">
+          <button id="more_spacesheeps" class="button-60">
+            more spcesheeps
+          </button>
+          <button id="less_spacesheeps"class="button-60">
+            less spcesheeps
+          </button>
+        </span>
+      </header>
 
       <section id="section1" class="vanillaJsScroll">
         <h2>Section 1</h2>
@@ -102,8 +119,6 @@ data-scroll-velocity="0">
           massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
         <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
           massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-
-
 
       </section>
 
@@ -184,9 +199,29 @@ data-scroll-velocity="0">
           nascetur ridiculus mus.</p>
         <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
           massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        </div>
+        
       </section>
 
+
+      <footer>
+        <h2>FOOTER</h2>
+        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
+          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
+          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
+          eget iaculis nunc. </p>
+        <p>Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
+        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
+          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
+        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
+          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
+          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus.</p>
+      </footer>
+
+      <div id="footer-foo">
+        correcting the space under the footer
+      </div>
 
 
 

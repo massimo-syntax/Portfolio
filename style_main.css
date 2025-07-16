@@ -6,27 +6,55 @@
     --white: #ffffff;
     --black: #333;
     --btn-border-radius: 4px;
-    --blue-text:#102770;
+    --blue-text:#485fc7;
     --btn-height:2.8rem;
     --blue-professional:#146ef5
   }
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
+    display: none;  /* Safari and Chrome */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 
 html {
-	/*scrollbar-width: none;  /* firefox */
-	/*scroll-behavior: smooth;*/
+	scrollbar-width: none;  /* Firefox */
+  font-size: 1rem;
+	/*
+  scroll-behavior: smooth;  
+  is done with gsap
+  */
 }
+
 
 body {
     margin:0;
     color: var(--black);
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    
+    font-weight: 300;
   }
+
+h1,h2,h3,h4{
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+h1,h2{
+  font-weight: 700;
+}
+h3,h4{
+  font-weight: 500;
+}
+
+p,a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
   nav {
     position:sticky;
@@ -35,11 +63,12 @@ body {
     background:#fffd;
     border-bottom: 2px solid var(--white);
     margin:0;
-    padding:1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    height: 10vh;
+    backdrop-filter: blur(2px);
+    z-index: 9999;
   }
 
   nav > #scrollbar{
@@ -58,6 +87,7 @@ body {
   header#website_title{
     margin-left:2rem;
     overflow: hidden;
+    padding:1rem,0;
     animation-name: fadeIn;
     animation-duration: 1s;
   }
@@ -65,10 +95,83 @@ body {
   #website_title > h2{ 
     letter-spacing: .15rem;
     font-size: 2.5rem;
-    margin:0;
-    
+    margin:0;    
+  }
+
+  #header-overlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+
+  #header_image_wrapper{
+    color:white;
+    display: inline-flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 2rem;
+    border-radius: 6rem;
+    background-color: inherit;
+    backdrop-filter: blur(6px);
+    margin: 3rem;
+
+  }
+
+  #header_image_wrapper > img{
+    border:1rem solid var(--black);
+    border-radius: 100%;
+    width: 18vw;
+    height:18vw;
+  }
+
+  #header_image_wrapper > figcaption {
+    padding: 3rem;
+    max-width: 40vw;
+  }
+
+  #header_image_wrapper > figcaption h2{
+    font-size: 3.5rem;
+  }
+
+  #header_image_wrapper > figcaption h4{
+    font-size: 1.6rem;
+    margin-top:1.5rem;
+    line-height: 2.3rem;
+    font-weight: 300;
+  }
+
+  #header_image_wrapper > h2{
+    font-size: 4rem;
+  }
+
+  #spacesheeps_buttons{
+    position: absolute;
+    bottom:0;
+    right:20px;
+    display: inline-flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
   }
   
+  #spacesheeps_buttons button{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border:1px solid white;
+    margin:1rem;
+    color:var(--blue-professional);
+    transition: all .2s ease;
+  }
+
+  #spacesheeps_buttons button:active{
+    color: white;
+    border-color: var(--blue-professional);
+  }
+
   
   @keyframes fadeIn {
   0% { opacity: 0; }
@@ -169,7 +272,7 @@ body {
 
 .button-60:focus:not(:active) {
   /*box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 6px;*/
-  border-color:#000;
+  border-color:var(--blue-professional);
   outline:0;
 }
 
@@ -300,4 +403,17 @@ a .uil {
   font-size: 22px;
 }
 
+footer{
+  background-color: var(--black);
+  color: var(--blue-professional);
+}
+
+#footer-foo{
+  position: relative;
+  background-color: green;
+  height: 0px;
+  overflow: hidden;
+  z-index: -1;
+  margin-top: -1rem;
+}
 

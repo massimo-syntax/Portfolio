@@ -13,13 +13,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	const navbarHeight = nav.offsetHeight
 
 
-	document.querySelectorAll("nav button.scroll-to").forEach((btn, index) => {
-	    btn.addEventListener("click", () => {
-	      gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY: navbarHeight }});
-	    });
-	  });
-
-
 	// split text stagger animatino
 	const myText = new SplitType("#website_title > h2");
 	gsap.to("#website_title > h2 .char", {
@@ -57,6 +50,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	let time = timeLast
 
 	const sections = dl(".vanillaJsScroll")
+
+	document.querySelectorAll("nav button.scroll-to").forEach((btn, index) => {
+	    btn.addEventListener("click", () => {
+	      gsap.to(window, {duration: 1, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight }});
+	    });
+	  });
+
+
 	const heights = []
 	const tops = []
 	sections.forEach(s => { 
