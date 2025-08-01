@@ -115,8 +115,8 @@ for (let i = 0; i < 10000; i + 2) {
         y:y,
         sizeX:4,
         sizeY:5,
-        speedX:Math.floor(Math.random()* -1 * 3) -1 ,
-        speedY:Math.floor(Math.random() * 2),
+        speedX:Math.round(Math.random()* -1 * 3) -1, // -1 in case that is 0
+        speedY:Math.round(Math.random() * 1) * (Math.round(Math.random()) ? 1 : -1), // -2 to 2
         type:"0",
         collision:false,
         get:function(){
@@ -142,8 +142,8 @@ for (let i = 0; i < 10000; i + 2) {
         y:y,
         sizeX:4,
         sizeY:5,
-        speedX:Math.floor(Math.random() * 3) + 1,
-        speedY:Math.floor(Math.random() * 2) ,
+        speedX:Math.round(Math.random() * 3) +1, // -1 in case that is 0
+        speedY:Math.round(Math.random() * 1) * (Math.round(Math.random()) ? 1 : -1), // -2 to 2
         type:"0",
         collision:false,
         get:function(){
@@ -390,7 +390,7 @@ setTimeout(()=>{
     start()
     // start adding spacesheeps
     startInterval()
-    },600)
+    },3000)
 
 
 

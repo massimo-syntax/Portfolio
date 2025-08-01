@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	gsap.to("#website_title > h2 .char", {
 		opacity:1,
 		//stagger: 0.1,
-		delay: 0.2,
-		duration: 1,
+		delay: 0.1,
+		duration: 0.5,
 		ease:"fade.out",
 		stagger:{
 			each:0.1,
@@ -117,6 +117,47 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		if(scroll < navbarHeight + 50) scrollbar.style.left = btns[0].offsetLeft + "px"
 		if( (scroll - navbarHeight + window.innerHeight) > documentBottom - 50 ) scrollbar.style.left = btns[btns.length-1].offsetLeft + btns[btns.length-1].offsetWidth - scrollbar.offsetWidth + "px"
   	});
+
+
+
+	// write text typing mimic
+	function typetext(id){
+		
+		/*const subtitle = d("#header_subtitile")
+		const text = subtitle.innerText.toString()
+		log(text)
+		subtitle.innerText = ""
+		let i = 0
+		function write() {
+			if (i < text.length) {
+				const time = Math.floor(Math.random() * 100 + 30)
+			  	subtitle.innerText += text[i];
+				if(text[i] == ' ') subtitle.innerHTML += "&nbsp"
+			  	i++;
+			  	setTimeout(write, time);
+			}
+		}
+		write()*/
+
+
+
+		d("#header_subtitile").style.visibility = "visible"		
+		const myText = new SplitType("#header_subtitile");
+		gsap.from("#header_subtitile .char", {
+			opacity:0,
+			stagger: 0.05,
+			delay: 1.5,
+			duration: 0.01,
+			ease:"fade.out",
+
+		});
+
+
+
+	}
+
+	typetext("#header_subtitile")
+
 
 
 }); // dom content loaded

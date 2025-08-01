@@ -117,7 +117,6 @@ p,a{
     background-color: inherit;
     backdrop-filter: blur(6px);
     margin: 3rem;
-
   }
 
   #header_image_wrapper > img{
@@ -128,7 +127,7 @@ p,a{
   }
 
   #header_image_wrapper > figcaption {
-    padding: 3rem;
+    padding: 0rem 2rem 2rem 3rem;
     max-width: 40vw;
   }
 
@@ -145,6 +144,10 @@ p,a{
 
   #header_image_wrapper > h2{
     font-size: 4rem;
+  }
+
+  #header_subtitile{
+    visibility:hidden;
   }
 
   #spacesheeps_buttons{
