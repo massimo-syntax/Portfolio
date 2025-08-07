@@ -19,6 +19,10 @@
   
   <!-- stylesheet grafic chars-->
   <link rel="stylesheet" href="style_chars_grafic.css" type="text/css" />
+
+  <!-- gsap overlap style css-->
+  <link rel="stylesheet" href="gsap-overlap-style.css" type="text/css" />
+
   
   <title>Portfolio</title>
 
@@ -125,34 +129,67 @@ data-scroll-velocity="0">
       <section id="section2" class="vanillaJsScroll">
 
         <h2>Section 2</h2>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+        <!-- GSAP SCROLL OVERLAP PICTURES-->
+        <div class="spacer"></div>
+
+        <div class="gallery">
+          <div class="left">
+            <div class="detailsWrapper">
+              <div class="details">
+                <div class="headline red"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+              </div>
+        
+              <div class="details">
+                <div class="headline green"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+              </div>
+        
+              <div class="details">
+                <div class="headline blue"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+              </div>
+              <div class="details">
+                <div class="headline blue"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+              </div>
+              <div class="details">
+                <div class="headline blue"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+                <div class="text"></div>
+              </div>
+        
+            </div>
+          </div>
+        
+          <div class="right">
+            <div class="photos">
+              <div class="photo red"></div>
+              <div class="photo green"></div>
+              <div class="photo blue"></div>
+              <div class="photo grey"></div>
+              <div class="photo green"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
       </section>
 
       <section id="section3" class="vanillaJsScroll">
@@ -231,8 +268,12 @@ data-scroll-velocity="0">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
 
-
+<!-- GSAP scroll-to -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+<!-- GSAP scroll trigger (overlapping pictures) -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
 
 <!-- smooth scroll -->
 <script src="mrd-smoothscroller.js"></script>
