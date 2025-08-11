@@ -121,23 +121,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	// write text typing mimic
 	function typetext(id){
-		
-		/*const subtitle = d("#header_subtitile")
-		const text = subtitle.innerText.toString()
-		log(text)
-		subtitle.innerText = ""
-		let i = 0
-		function write() {
-			if (i < text.length) {
-				const time = Math.floor(Math.random() * 100 + 30)
-			  	subtitle.innerText += text[i];
-				if(text[i] == ' ') subtitle.innerHTML += "&nbsp"
-			  	i++;
-			  	setTimeout(write, time);
-			}
-		}
-		write()*/
-
 		d("#header_subtitile").style.visibility = "visible"		
 		const myText = new SplitType("#header_subtitile");
 		gsap.from("#header_subtitile .char", {
@@ -148,24 +131,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			ease:"fade.out",
 
 		});
-
-
-
 	}
-
 	typetext("#header_subtitile")
 
 
 	// GSAP OVERLAP PICTURES
 	gsap.registerPlugin(ScrollTrigger) 
 	
-	gsap.set(".photo:not(:first-child)", {opacity:1, scale:1, y:"-100%"})
-	const animation = gsap.to(".photo:not(:first-child)", {
+	gsap.set("#gallery .photo:not(:first-child)", {opacity:1, scale:1, y:"-100%"})
+	const animation = gsap.to(" #gallery .photo:not(:first-child)", {
 		y:"0%", duration:1, stagger:1
 	})
 
 	ScrollTrigger.create({
-		trigger:".gallery",
+		trigger:"#gallery",
 		start:"top top",
 		end:"bottom bottom",
 		pin:".right",
@@ -173,6 +152,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		scrub:true,
 		//markers:true
 	})
+
 
 
 

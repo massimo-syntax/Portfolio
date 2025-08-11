@@ -8,7 +8,7 @@
 
 
 .headline {
-	background:#2D4E86;
+	background:#ddd;
 	border-radius:6px;
 	height:4em;
 	width:100%;
@@ -30,17 +30,22 @@
   outline:1px solid red;
 }
 
-.left {
+.showcase_text {
 	width:50%;
 }
 
 .detailsWrapper {
 	margin:auto;
 	width:80%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
 }
 
 .details {
 	height:100vh;
+	width:80%;
 	outline:1px solid green;
 	display:flex;
 	flex-direction:column;
@@ -55,22 +60,37 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
+	align-items: center;
 }
 
 .photos {
-	width:40vw;
-	height:40vw;
 	background:none;
 	position:relative;
+	margin-top: 10vh;
 	overflow:hidden;
+	width:43vh;
+	height:84.5vh;
 }
 
 .photo {
 	position:absolute;
-	width:100%;
-	height:100%;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-radius: .5cm;
+	margin-top:-1px;
+	border: 5px solid darkgray;
+	background-color: white;
 }
 
+.photo > img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
+/*
 .red {
 	background: red;
 }
@@ -85,3 +105,5 @@
 .grey {
 	background:grey;
 }
+
+*/
