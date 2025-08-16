@@ -138,17 +138,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	// GSAP OVERLAP PICTURES
 	gsap.registerPlugin(ScrollTrigger) 
 	
-	gsap.set("#gallery .photo:not(:first-child)", {opacity:1, scale:1, y:"-100%"})
-	const animation = gsap.to(" #gallery .photo:not(:first-child)", {
-		y:"0%", duration:1, stagger:1
+	gsap.set("#gallery_1 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	const animation_1 = gsap.to(" #gallery_1 .photo_showcase:not(:first-child)", {
+		y:"0%", opacity:1, scale:1, duration:1, stagger:1
 	})
 
 	ScrollTrigger.create({
-		trigger:"#gallery",
+		trigger:"#gallery_1",
 		start:"top top",
 		end:"bottom bottom",
-		pin:".right",
-		animation: animation,
+		pin:"#showcase_pictures_container_1",
+		animation: animation_1,
+		scrub:true,
+		//markers:true
+	})
+
+	gsap.set("#gallery_2 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	const animation_2 = gsap.to(" #gallery_2 .photo_showcase:not(:first-child)", {
+		y:"0%", opacity:1, scale:1, duration:1, stagger:1
+	})
+
+	ScrollTrigger.create({
+		trigger:"#gallery_2",
+		start:"top top",
+		end:"bottom bottom",
+		pin:"#showcase_pictures_container_2",
+		animation: animation_2,
 		scrub:true,
 		//markers:true
 	})

@@ -25,12 +25,12 @@
 
 
 
-.gallery {
+.showcase_gallery {
   display:flex;	
   outline:1px solid red;
 }
 
-.showcase_text {
+.showcase_text_container {
 	width:50%;
 }
 
@@ -43,7 +43,7 @@
 	align-items: center;
 }
 
-.details {
+.showcase_details {
 	height:100vh;
 	width:80%;
 	outline:1px solid green;
@@ -53,7 +53,7 @@
 }
 
 
-.right {
+.showcase_pictures_container {
 	outline:1px solid purple;
 	width:50%;
 	height:100vh;
@@ -63,27 +63,26 @@
 	align-items: center;
 }
 
-.photos {
+.showcase_photos {
 	background:none;
 	position:relative;
 	margin-top: 10vh;
-	overflow:hidden;
 	width:43vh;
 	height:84.5vh;
 }
 
-.photo {
+.photo_showcase {
 	position:absolute;
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
 	border-radius: .5cm;
-	margin-top:-1px;
-	border: 5px solid darkgray;
+	border: 1px solid darkgrey;
 	background-color: white;
+	box-shadow: 0 0 4px lightgrey;
 }
 
-.photo > img{
+.photo_showcase > img{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
