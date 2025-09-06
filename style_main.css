@@ -22,6 +22,10 @@
     margin: 0;
     box-sizing: border-box;
   }
+  
+  *:before, *:after {
+    box-sizing: inherit;
+  }
 
 html {
 	scrollbar-width: none;  /* Firefox */
@@ -226,8 +230,6 @@ p,a{
 
 
 /*        N A V B A R    B U T T O N S      */
-/* CSS */
-/* CSS */
 .button-60 {
   align-items: center;
   appearance: none;
@@ -324,9 +326,6 @@ p,a{
 
 
 
-
-
-
 .section-dropdown {
   position: absolute;
   padding: 5px;
@@ -373,7 +372,7 @@ p,a{
 
 
 
-a {
+nav a {
   position: relative;
   color: #fff;
   transition: all 200ms linear;
@@ -397,12 +396,12 @@ a {
     -ms-flex-pack: distribute;
 }
 
-a:hover {
+nav a:hover {
   color: #102770;
   background-color: #ffeba7;
 }
 
-a .uil {
+nav a .uil {
   font-size: 22px;
 }
 

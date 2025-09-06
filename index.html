@@ -21,7 +21,10 @@
   <link rel="stylesheet" href="style_chars_grafic.css" type="text/css" />
 
   <!-- gsap overlap style css-->
-  <link rel="stylesheet" href="gsap-overlap-style.css" type="text/css" />
+  <link rel="stylesheet" href="style_gsap_overlap.css" type="text/css" />
+
+  <!-- about style css-->
+  <link rel="stylesheet" href="style_about.css" type="text/css" />
 
   
   <title>Portfolio</title>
@@ -126,10 +129,11 @@ data-scroll-velocity="0">
 
       </section>
 
+      <!-- GSAP OVERLAP SECTION -->
       <section id="section2" class="vanillaJsScroll">
 
         <h2>Section 2</h2>
-        <!-- GSAP SCROLL OVERLAP PICTURES-->
+        <!-- gsap scroll overlap pictures-->
         <div class="spacer"></div>
 
         <div id="gallery_1" class="showcase_gallery">
@@ -270,53 +274,73 @@ data-scroll-velocity="0">
 
         </div>
         
-
       </section>
 
+      <!-- ABOUT SECTION -->
       <section id="section3" class="vanillaJsScroll">
-        <h2>Section 3</h2>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+
+
+        <div class="abaout_section_container">
+          <div class="title-container">
+            <h1 class="title code">&lt;Software&gt; &amp; &lt;Projekte&gt;</h1>
+          </div>
+          <div class="about_card-list">
+            <div class="about_card">
+              <h3 class="about_card-title code code-details">&lt;details&gt;</h3>
+              <p class="about_card-description">
+                Schon vor einigen Jahren begann ich aus persönlichem Interesse Programme für Konsolen zu entwickeln.
+                <br/>
+                Um etwa zwei Jahren lebte ich in den Niederlanden und versuchte dort, als Webentwickler zu bewerben, wurde ich auch einmal berücksichtight. In dieser Zeit war ich aber stark beschäftigt, Nebenjobs und meine Wohnsituation zu organisieren. 
+                <br/>
+                Jetzt geht mir besser.
+              </p>
+            </div>
+            <div class="about_card">
+              <h3 class="about_card-title code code-summary">&lt;summary&gt;</h3>
+              <p class="about_card-description">
+                Das Code für meine Hobbyprojekte sind auf <a href="https://github.com/ganzerli" target="_blank" rel="noopener noreferrer">GitHub</a> auch.
+              </p>
+              <p class="about_card-description">
+                Die Android-Projekte sind auf <a href="https://github.com/massimo-syntax" target="_blank" rel="noopener noreferrer">dieser Seite,</a>
+                die letzte shop app in Jetpack Compose ist noch nicht fertig...
+              </p>
+              <p class="about_card-description">
+                Am besten wäre ich erreichbar durch Linkedin sonst per email: massimoganzerli@yahoo.com
+              </p>
+
+            </div>
+          </div>
+          <div class="about_sample">
+            <div class="about_sample-title">code</div>
+            <div class="about_sample-code">
+              <div class="code"> 
+                <span class="code-details">&lt;details&gt;</span>
+                <br/>
+                &nbsp;&nbsp; <span class="code-summary">&lt;summary&gt;</span>
+                <br/>
+                <div style="margin-left: 4rem;">
+                  Aktuell habe ich durch eine berufliche Weiterbildung fundierte Grundlagen für Mobile Entwicklung erworben und die nötige Zeit, um Projekte gezielt und professionell umzusetzen.        
+                </div>
+                &nbsp;&nbsp; <span class="code-summary">&lt;/summary&gt;</span>
+                <br/>
+                <div style="margin-left: 2rem;">
+                  Ich habe Projekte in verschiedenen Programmiersprachen wie PHP, C und C++ umgesetzt - darunter auch mehrere Anwendungen mit Backend-Logik und Datenbankanbindung. Zusätzlich verfüge ich über Kenntnisse im Frontend-Bereich sowie in der Android-Entwicklung mit Jetpack Compose.
+                  <br/>
+                  Kenne ich auch die moderne Konzepte wie: MVVM, Repository, ROOM (SQL), Firebase (NOSQL), JSON, API's , Retrofit, oder gerne andere, wenn ich weiss wie sie funktionieren.
+                </div>
+                <span class="code-details">&lt;/details&gt;</span>
+              </div>
+            </div>
+            <div class="about_sample-title">output</div>
+            <div class="about_sample-html">
+              <details class="about_sample-html-details">
+                <summary class="about_sample-html-summary"> Dieses Portfolio habe ich ebenfalls selbst aufgebaut.</summary>
+                <div class="speech">Die Schönste Projekte sin in meinen Github Accounts...</div>
+              </details>
+            </div>
+          </div>
+        </div>
+
         
       </section>
 
