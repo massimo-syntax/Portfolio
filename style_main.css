@@ -65,7 +65,7 @@ p,a{
     top:0;
     width:100%;
     background:#fffd;
-    border-bottom: 2px solid var(--white);
+    /*border-bottom: 2px solid var(--white);*/
     margin:0;
     display: flex;
     justify-content: space-between;
@@ -212,13 +212,14 @@ p,a{
   }
 
 
-
+/*
   .content {
     padding:4rem;
   }
 
+  */
   section{
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
   }
 
   p{

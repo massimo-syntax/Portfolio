@@ -4,21 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet"
+    type="text/css">
 
   <!-- icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!--normalize css-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css" />
 
   <!-- stylesheet there -->
   <link rel="stylesheet" href="style_main.css" type="text/css" />
-  
+
   <!-- stylesheet grafic chars-->
   <link rel="stylesheet" href="style_chars_grafic.css" type="text/css" />
+
+
+  <link rel="stylesheet" href="style_cards_section.css">
 
   <!-- gsap overlap style css-->
   <link rel="stylesheet" href="style_gsap_overlap.css" type="text/css" />
@@ -26,22 +30,18 @@
   <!-- about style css-->
   <link rel="stylesheet" href="style_about.css" type="text/css" />
 
-  
+
   <title>Portfolio</title>
 
 </head>
 
-<body class="mrd-smooth"
-data-scroll-duration="1000"
-data-scroll-deceleration="0.96"
-data-scroll-sensitivity="0.05"
-data-scroll-isScrolling="false"
-data-scroll-velocity="0">
+<body class="mrd-smooth" data-scroll-duration="1000" data-scroll-deceleration="0.96" data-scroll-sensitivity="0.05"
+  data-scroll-isScrolling="false" data-scroll-velocity="0">
 
 
 
   <nav>
-
+    <!-- BLUE BAR FLOATING UNDER BUTTONS -->
     <span id="scrollbar"></span>
 
     <header id="website_title">
@@ -69,301 +69,426 @@ data-scroll-velocity="0">
       </div>
     </div>
 
-
   </nav>
 
-  
-      <header id="header" class="vanillaJsScroll">
-        <span id="charsGraficElement">
-            <!-- here is the grafic engine of chars-->
-        </span>
-        <div id="header-overlay">
-          <figure id="header_image_wrapper">
-            <img src="me_main_picture.jpg" alt="das ist ich, ein sehr guter Mobile Entwickler">
-            <figcaption>
-            <h2 id="header_title"> Massimo Ganzerli </h2>
-            <h4 id="header_subtitile"> Ich codiere als Hobby seit jahren, Jetzt suche ich einen Job als Android Entwickler </h4>
-            </figcaption>
-          </figure>
+
+  <!-- H E A D E R -->
+
+  <header id="header" class="vanillaJsScroll">
+    <span id="charsGraficElement">
+      <!-- here is the grafic engine of chars-->
+    </span>
+    <div id="header-overlay">
+      <figure id="header_image_wrapper">
+        <img src="me_main_picture.jpg" alt="das ist ich, ein sehr guter Mobile Entwickler">
+        <figcaption>
+          <h2 id="header_title"> Massimo Ganzerli </h2>
+          <h4 id="header_subtitile"> Ich codiere als Hobby seit jahren, Jetzt suche ich einen Job als Android Entwickler
+          </h4>
+        </figcaption>
+      </figure>
+    </div>
+    <span id="spacesheeps_buttons">
+      <button id="more_spacesheeps" class="button-60">
+        more spcesheeps
+      </button>
+      <button id="less_spacesheeps" class="button-60">
+        less spcesheeps
+      </button>
+    </span>
+  </header>
+
+
+
+  <!-- PORTFOLIO CARDS SECTION -->
+  <section id="section1" class="vanillaJsScroll">
+
+    <div class="subsection-wrapper">
+
+      <article class="product">
+        <div class="product__photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <div class="controls">
+                <i class="material-icons">share</i>
+                <i class="material-icons">favorite_border</i>
+              </div>
+
+              <img class="smartphone" src="screenshots/Screenshot_20250811-153436.png" alt="application screeenshot">
+              <!--
+                          <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="green apple slice">
+                          -->
+            </div>
+          </div>
         </div>
-        <span id="spacesheeps_buttons">
-          <button id="more_spacesheeps" class="button-60">
-            more spcesheeps
-          </button>
-          <button id="less_spacesheeps"class="button-60">
-            less spcesheeps
-          </button>
-        </span>
-      </header>
-
-      <section id="section1" class="vanillaJsScroll">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-        <p>Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
-
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-        <p>Mi elementum et. Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales
-          massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-
-      </section>
-
-      <!-- GSAP OVERLAP SECTION -->
-      <section id="section2" class="vanillaJsScroll">
-
-        <h2>Section 2</h2>
-        <!-- gsap scroll overlap pictures-->
-        <div class="spacer"></div>
-
-        <div id="gallery_1" class="showcase_gallery">
-
-          <div class="showcase_text_container">
-            <div class="detailsWrapper">
-              <div class="showcase_details">
-                <div class="headline red">HEADLINE</div>
-                <div class="text">Firstn picture showing how the screen is</div>
-                <div class="text">Another picture to know what is in this screen</div>
-                <div class="text">Thats a text yet</div>
-                <div class="text"></div>
-              </div>
-        
-              <div class="showcase_details">
-                <div class="headline green"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-              </div>
-        
-              <div class="showcase_details">
-                <div class="headline blue">Text heading</div>
-                <div class="text">text</div>
-                <div class="text">here text</div>
-                <div class="text">text test</div>
-                <div class="text">much text</div>
-              </div>
-              <div class="showcase_details">
-                <div class="headline grey"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-              </div>
-              <div class="showcase_details">
-                <div class="headline ">Last headline</div>
-                <div class="text"></div>
-                <div class="text">text</div>
-                <div class="text"></div>
-                <div class="text">much more text</div>
-              </div>
-        
-            </div>
+        <div class="product__info">
+          <div class="title">
+            <h2>Delicious Apples</h2>
+            <span>COD: 45999</span>
           </div>
-        
-          <div id="showcase_pictures_container_1" class="showcase_pictures_container">
-            <div class="showcase_photos">
-              <div class="photo_showcase red">
-                <img src="screenshots/Screenshot_20250811-153240.png" />
-              </div>
-              <div class="photo_showcase green">
-                <img src="screenshots/Screenshot_20250811-222934.png" />
-              </div>
-              <div class="photo_showcase blue">
-                <img src="screenshots/Screenshot_20250811-153303.png" />
-              </div>
-              <div class="photo_showcase grey">
-                <img src="screenshots/Screenshot_20250811-223327.png" />
-              </div>
-              <div class="photo_showcase green">
-                <img src="screenshots/Screenshot_20250811-153404.png" />
-              </div>
-            </div>
+          <!--
+                  <div class="price">
+                      R$ <span>7.93</span>
+                  </div>
+                  <div class="variant">
+                      <h3>SELECT A COLOR</h3>
+                      <ul>
+                          <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
+                          <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow apple"></li>
+                          <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange apple"></li>
+                          <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red apple"></li>
+                      </ul>
+                  </div>
+      
+      -->
+          <div class="photo-album">
+            <ul>
+              <li><img src="screenshots/Screenshot_20250811-153240.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153250.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153303.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153414.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153436.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-222934.png" alt="green apple"></li>
+
+            </ul>
           </div>
 
+          <div class="description">
+            <h3>BENEFITS</h3>
+            <ul>
+              <li>Apples are nutricious</li>
+              <li>Apples may be good for weight loss</li>
+              <li>Apples may be good for bone health</li>
+              <li>They're linked to a lowest risk of diabetes</li>
+            </ul>
+          </div>
+          <button id="btn-card__1" class="details--btn">DETAILS</button>
         </div>
+      </article>
+
+    </div>
 
 
 
-        <div id="gallery_2" class="showcase_gallery">
+    <!-- 2ND APP CARD -->
 
-          <div id="showcase_pictures_container_2" class="showcase_pictures_container">
-            <div class="showcase_photos">
-              <div class="photo_showcase red">
-                <img src="screenshots/Screenshot_20250811-153240.png" />
+
+    <div class="subsection-wrapper">
+
+      <article class="product">
+        <div class="product__photo">
+          <div class="photo-container">
+            <div class="photo-main">
+              <div class="controls">
+                <i class="material-icons">share</i>
+                <i class="material-icons">favorite_border</i>
               </div>
-              <div class="photo_showcase green">
-                <img src="screenshots/Screenshot_20250811-222934.png" />
-              </div>
-              <div class="photo_showcase blue">
-                <img src="screenshots/Screenshot_20250811-153303.png" />
-              </div>
-              <div class="photo_showcase grey">
-                <img src="screenshots/Screenshot_20250811-223327.png" />
-              </div>
-              <div class="photo_showcase green">
-                <img src="screenshots/Screenshot_20250811-153404.png" />
-              </div>
+
+              <img class="smartphone" src="screenshots/Screenshot_20250811-153436.png" alt="application screeenshot">
+              <!--
+                        <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537291846/codepen/delicious-apples/green-apple-with-slice.png" alt="green apple slice">
+                        -->
             </div>
           </div>
-
-
-          <div class="showcase_text_container">
-            <div class="detailsWrapper">
-              <div class="showcase_details">
-                <div class="headline red">HEADLINE</div>
-                <div class="text">Firstn picture showing how the screen is</div>
-                <div class="text">Another picture to know what is in this screen</div>
-                <div class="text">Thats a text yet</div>
-                <div class="text"></div>
-              </div>
-        
-              <div class="showcase_details">
-                <div class="headline green"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-              </div>
-        
-              <div class="showcase_details">
-                <div class="headline blue">Text heading</div>
-                <div class="text">text</div>
-                <div class="text">here text</div>
-                <div class="text">text test</div>
-                <div class="text">much text</div>
-              </div>
-              <div class="showcase_details">
-                <div class="headline grey"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-                <div class="text"></div>
-              </div>
-              <div class="showcase_details">
-                <div class="headline ">Last headline</div>
-                <div class="text"></div>
-                <div class="text">text</div>
-                <div class="text"></div>
-                <div class="text">much more text</div>
-              </div>
-        
-            </div>
-          </div>
-        
-
         </div>
-        
-      </section>
-
-      <!-- ABOUT SECTION -->
-      <section id="section3" class="vanillaJsScroll">
-
-
-        <div class="abaout_section_container">
-          <div class="title-container">
-            <h1 class="title code">&lt;Software&gt; &amp; &lt;Projekte&gt;</h1>
+        <div class="product__info">
+          <div class="title">
+            <h2>Delicious Apples</h2>
+            <span>COD: 45999</span>
           </div>
-          <div class="about_card-list">
-            <div class="about_card">
-              <h3 class="about_card-title code code-details">&lt;details&gt;</h3>
-              <p class="about_card-description">
-                Schon vor einigen Jahren begann ich aus persönlichem Interesse Programme für Konsolen zu entwickeln.
-                <br/>
-                Um etwa zwei Jahren lebte ich in den Niederlanden und versuchte dort, als Webentwickler zu bewerben, wurde ich auch einmal berücksichtight. In dieser Zeit war ich aber stark beschäftigt, Nebenjobs und meine Wohnsituation zu organisieren. 
-                <br/>
-                Jetzt geht mir besser.
-              </p>
-            </div>
-            <div class="about_card">
-              <h3 class="about_card-title code code-summary">&lt;summary&gt;</h3>
-              <p class="about_card-description">
-                Das Code für meine Hobbyprojekte sind auf <a href="https://github.com/ganzerli" target="_blank" rel="noopener noreferrer">GitHub</a> auch.
-              </p>
-              <p class="about_card-description">
-                Die Android-Projekte sind auf <a href="https://github.com/massimo-syntax" target="_blank" rel="noopener noreferrer">dieser Seite,</a>
-                die letzte shop app in Jetpack Compose ist noch nicht fertig...
-              </p>
-              <p class="about_card-description">
-                Am besten wäre ich erreichbar durch Linkedin sonst per email: massimoganzerli@yahoo.com
-              </p>
-
-            </div>
-          </div>
-          <div class="about_sample">
-            <div class="about_sample-title">code</div>
-            <div class="about_sample-code">
-              <div class="code"> 
-                <span class="code-details">&lt;details&gt;</span>
-                <br/>
-                &nbsp;&nbsp; <span class="code-summary">&lt;summary&gt;</span>
-                <br/>
-                <div style="margin-left: 4rem;">
-                  Aktuell habe ich durch eine berufliche Weiterbildung fundierte Grundlagen für Mobile Entwicklung erworben und die nötige Zeit, um Projekte gezielt und professionell umzusetzen.        
+          <!--
+                <div class="price">
+                    R$ <span>7.93</span>
                 </div>
-                &nbsp;&nbsp; <span class="code-summary">&lt;/summary&gt;</span>
-                <br/>
-                <div style="margin-left: 2rem;">
-                  Ich habe Projekte in verschiedenen Programmiersprachen wie PHP, C und C++ umgesetzt - darunter auch mehrere Anwendungen mit Backend-Logik und Datenbankanbindung. Zusätzlich verfüge ich über Kenntnisse im Frontend-Bereich sowie in der Android-Entwicklung mit Jetpack Compose.
-                  <br/>
-                  Kenne ich auch die moderne Konzepte wie: MVVM, Repository, ROOM (SQL), Firebase (NOSQL), JSON, API's , Retrofit, oder gerne andere, wenn ich weiss wie sie funktionieren.
+                <div class="variant">
+                    <h3>SELECT A COLOR</h3>
+                    <ul>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="green apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="yellow apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="orange apple"></li>
+                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="red apple"></li>
+                    </ul>
                 </div>
-                <span class="code-details">&lt;/details&gt;</span>
-              </div>
-            </div>
-            <div class="about_sample-title">output</div>
-            <div class="about_sample-html">
-              <details class="about_sample-html-details">
-                <summary class="about_sample-html-summary"> Dieses Portfolio habe ich ebenfalls selbst aufgebaut.</summary>
-                <div class="speech">Die Schönste Projekte sin in meinen Github Accounts...</div>
-              </details>
-            </div>
+    
+    -->
+          <div class="photo-album">
+            <ul>
+              <li><img src="screenshots/Screenshot_20250811-153240.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153250.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153303.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153414.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-153436.png" alt="green apple"></li>
+              <li><img src="screenshots/Screenshot_20250811-222934.png" alt="green apple"></li>
+
+            </ul>
           </div>
+
+          <div class="description">
+            <h3>BENEFITS</h3>
+            <ul>
+              <li>Apples are nutricious</li>
+              <li>Apples may be good for weight loss</li>
+              <li>Apples may be good for bone health</li>
+              <li>They're linked to a lowest risk of diabetes</li>
+            </ul>
+          </div>
+          <button id="btn-card__2" class="details--btn">DETAILS</button>
         </div>
+      </article>
 
-        
-      </section>
+    </div>
 
 
-      <footer>
-        <h2>FOOTER</h2>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
-          viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
-          eget iaculis nunc. </p>
-        <p>Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
-          ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
-        <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
-          Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
-          volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.</p>
-      </footer>
+  </section>
 
-      <div id="footer-foo">
-        correcting the space under the footer
+
+
+
+
+  <!-- GSAP OVERLAP SECTION -->
+
+  <section id="section2" class="vanillaJsScroll">
+
+    <h2>SHOWCASES</h2>
+
+    <!-- gsap scroll overlap pictures-->
+
+    <div id="gallery_1" class="showcase_gallery">
+
+      <div class="showcase_text_container">
+        <div class="detailsWrapper">
+          <div class="showcase_details">
+            <div class="headline red">HEADLINE</div>
+            <div class="text">Firstn picture showing how the screen is</div>
+            <div class="text">Another picture to know what is in this screen</div>
+            <div class="text">Thats a text yet</div>
+            <div class="text"></div>
+          </div>
+
+          <div class="showcase_details">
+            <div class="headline green"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+          </div>
+
+          <div class="showcase_details">
+            <div class="headline blue">Text heading</div>
+            <div class="text">text</div>
+            <div class="text">here text</div>
+            <div class="text">text test</div>
+            <div class="text">much text</div>
+          </div>
+          <div class="showcase_details">
+            <div class="headline grey"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+          </div>
+          <div class="showcase_details">
+            <div class="headline ">Last headline</div>
+            <div class="text"></div>
+            <div class="text">text</div>
+            <div class="text"></div>
+            <div class="text">much more text</div>
+          </div>
+
+        </div>
       </div>
+
+      <div id="showcase_pictures_container_1" class="showcase_pictures_container">
+        <div class="showcase_photos">
+          <div class="photo_showcase red">
+            <img src="screenshots/Screenshot_20250811-153240.png" />
+          </div>
+          <div class="photo_showcase green">
+            <img src="screenshots/Screenshot_20250811-222934.png" />
+          </div>
+          <div class="photo_showcase blue">
+            <img src="screenshots/Screenshot_20250811-153303.png" />
+          </div>
+          <div class="photo_showcase grey">
+            <img src="screenshots/Screenshot_20250811-223327.png" />
+          </div>
+          <div class="photo_showcase green">
+            <img src="screenshots/Screenshot_20250811-153404.png" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="gallery_2" class="showcase_gallery">
+
+      <div id="showcase_pictures_container_2" class="showcase_pictures_container">
+        <div class="showcase_photos">
+          <div class="photo_showcase red">
+            <img src="screenshots/Screenshot_20250811-153240.png" />
+          </div>
+          <div class="photo_showcase green">
+            <img src="screenshots/Screenshot_20250811-222934.png" />
+          </div>
+          <div class="photo_showcase blue">
+            <img src="screenshots/Screenshot_20250811-153303.png" />
+          </div>
+          <div class="photo_showcase grey">
+            <img src="screenshots/Screenshot_20250811-223327.png" />
+          </div>
+          <div class="photo_showcase green">
+            <img src="screenshots/Screenshot_20250811-153404.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="showcase_text_container">
+        <div class="detailsWrapper">
+          <div class="showcase_details">
+            <div class="headline red">HEADLINE</div>
+            <div class="text">Firstn picture showing how the screen is</div>
+            <div class="text">Another picture to know what is in this screen</div>
+            <div class="text">Thats a text yet</div>
+            <div class="text"></div>
+          </div>
+
+          <div class="showcase_details">
+            <div class="headline green"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+          </div>
+
+          <div class="showcase_details">
+            <div class="headline blue">Text heading</div>
+            <div class="text">text</div>
+            <div class="text">here text</div>
+            <div class="text">text test</div>
+            <div class="text">much text</div>
+          </div>
+          <div class="showcase_details">
+            <div class="headline grey"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+            <div class="text"></div>
+          </div>
+          <div class="showcase_details">
+            <div class="headline ">Last headline</div>
+            <div class="text"></div>
+            <div class="text">text</div>
+            <div class="text"></div>
+            <div class="text">much more text</div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="section3" class="vanillaJsScroll">
+
+
+    <div class="abaout_section_container">
+      <div class="title-container">
+        <h1 class="title code">&lt;Software&gt; &amp; &lt;Projekte&gt;</h1>
+      </div>
+      <div class="about_card-list">
+        <div class="about_card">
+          <h3 class="about_card-title code code-details">&lt;details&gt;</h3>
+          <p class="about_card-description">
+            Schon vor einigen Jahren begann ich aus persönlichem Interesse Programme für Konsolen zu entwickeln.
+            <br />
+            Um etwa zwei Jahren lebte ich in den Niederlanden und versuchte dort, als Webentwickler zu bewerben, wurde
+            ich auch einmal berücksichtight. In dieser Zeit war ich aber stark beschäftigt, Nebenjobs und meine
+            Wohnsituation zu organisieren.
+            <br />
+            Jetzt geht mir besser.
+          </p>
+        </div>
+        <div class="about_card">
+          <h3 class="about_card-title code code-summary">&lt;summary&gt;</h3>
+          <p class="about_card-description">
+            Das Code für meine Hobbyprojekte sind auf <a href="https://github.com/ganzerli" target="_blank"
+              rel="noopener noreferrer">GitHub</a> auch.
+          </p>
+          <p class="about_card-description">
+            Die Android-Projekte sind auf <a href="https://github.com/massimo-syntax" target="_blank"
+              rel="noopener noreferrer">dieser Seite,</a>
+            die letzte shop app in Jetpack Compose ist noch nicht fertig...
+          </p>
+          <p class="about_card-description">
+            Am besten wäre ich erreichbar durch Linkedin sonst per email: massimoganzerli@yahoo.com
+          </p>
+
+        </div>
+      </div>
+      <div class="about_sample">
+        <div class="about_sample-title">code</div>
+        <div class="about_sample-code">
+          <div class="code">
+            <span class="code-details">&lt;details&gt;</span>
+            <br />
+            &nbsp;&nbsp; <span class="code-summary">&lt;summary&gt;</span>
+            <br />
+            <div style="margin-left: 4rem;">
+              Aktuell habe ich durch eine berufliche Weiterbildung fundierte Grundlagen für Mobile Entwicklung erworben
+              und die nötige Zeit, um Projekte gezielt und professionell umzusetzen.
+            </div>
+            &nbsp;&nbsp; <span class="code-summary">&lt;/summary&gt;</span>
+            <br />
+            <div style="margin-left: 2rem;">
+              Ich habe Projekte in verschiedenen Programmiersprachen wie PHP, C und C++ umgesetzt - darunter auch
+              mehrere Anwendungen mit Backend-Logik und Datenbankanbindung. Zusätzlich verfüge ich über Kenntnisse im
+              Frontend-Bereich sowie in der Android-Entwicklung mit Jetpack Compose.
+              <br />
+              Kenne ich auch die moderne Konzepte wie: MVVM, Repository, ROOM (SQL), Firebase (NOSQL), JSON, API's ,
+              Retrofit, oder gerne andere, wenn ich weiss wie sie funktionieren.
+            </div>
+            <span class="code-details">&lt;/details&gt;</span>
+          </div>
+        </div>
+        <div class="about_sample-title">output</div>
+        <div class="about_sample-html">
+          <details class="about_sample-html-details">
+            <summary class="about_sample-html-summary"> Dieses Portfolio habe ich ebenfalls selbst aufgebaut.</summary>
+            <div class="speech">Die Schönste Projekte sin in meinen Github Accounts...</div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <footer>
+    <h2>FOOTER</h2>
+    <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
+      Suspendisse pharetra purus urna, ac pretium mi elementes, nascetur ridiculus mus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nibh quam, egestas eu eros molestie, eleifend
+      viverra augue. Suspendisse potenti. Quisque commodo consectetur quam, non pretium orci viverra at. Maecenas
+      eget iaculis nunc. </p>
+    <p>Praesent dui nibh, ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
+    <p>consectetur condimentum. Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh,
+      ullamcorper in justo sed, volutpat cursus orci. Etiam vitae sodales massa.</p>
+    <p>Praesent at pellentesque augue. Nunc sed ullamcorper risus. Duis tincidunt consectetur condimentum.
+      Suspendisse pharetra purus urna, ac pretium mi elementum et. Praesent dui nibh, ullamcorper in justo sed,
+      volutpat cursus orci. Etiam vitae sodales massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus.</p>
+  </footer>
+
+  <div id="footer-foo">
+    correcting the space under the footer
+  </div>
 
 
 

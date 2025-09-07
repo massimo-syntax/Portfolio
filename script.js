@@ -51,11 +51,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	const sections = dl(".vanillaJsScroll")
 
+	// SCROLL ON CLICK
+	
+	// navbar buttons
 	document.querySelectorAll("nav button.scroll-to").forEach((btn, index) => {
 	    btn.addEventListener("click", () => {
-	      gsap.to(window, {duration: 1, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight }});
+	      gsap.to(window, {duration: 1, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight - 1}});
 	    });
 	  });
+
+	// cards buttons 1st section
+	d("#btn-card__1").addEventListener("click",()=>{
+		gsap.to(window, {duration: 1, scrollTo:{ y:"#gallery_1" , offsetY: navbarHeight }});
+	})
+	d("#btn-card__2").addEventListener("click",()=>{
+		gsap.to(window, {duration: 1, scrollTo:{ y:"#gallery_2" , offsetY: navbarHeight }});
+	})
 
 
 	const heights = []
@@ -91,14 +102,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		// the browser can rest some milliseconds before next calculation
 		time = Date.now()
 		// top window + navbar does not directly overlap tops[i]
-		scroll = window.scrollY + navbarHeight + 30; 
+		scroll = window.scrollY + navbarHeight; 
 
-		if( time > timeLast + 200 ){
+		if( time > timeLast ){ // not needed anymore, most of the times scrolling on btn click is not updated the location with +200
+			// cheeck wich section 
 			for(let i = 0 ; i < sections.length ; i++ ){
-
-				if(scroll > tops[i] && scroll < tops[i]+heights[i]){
+				if(scroll >= tops[i] && scroll < tops[i]+heights[i]){
+					// knowing the section know how many px is scrolled, in this section
 					inscroll = scroll - tops[i]
-					//	lastBtn = btns[i]
+					// lastBtn = btns[i]
+					// i is the number of the section, also of the button sect1 = btn1
+					// instead to loop throught all the buttons just keep track of which,
+					// to then change back the style as it was when highliting the new one
 					if(btns[i] !== lastBtn){
 						btns[i].style.color = prettyColor
 						lastBtn.style.color = _i_color

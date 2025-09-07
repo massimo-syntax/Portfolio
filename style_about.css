@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 .abaout_section_container {
-  padding: 0 20px;
+  padding: 3rem;
   max-width: 75vw;
-  margin: 5rem auto;
+  margin: auto;
   color: #738290;
   font-family: "Roboto", sans-serif;
 }
