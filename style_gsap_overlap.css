@@ -28,6 +28,36 @@
 
 /* to change */
 
+#showcase_title{
+	font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.showcase_headline h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+.showcase_headline h1 span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+
+
+
+.showcase_details{
+	color:#1a222e;
+}
+
 
 .showcase_gallery {
   display:flex;	

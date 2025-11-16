@@ -52,20 +52,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	const sections = dl(".vanillaJsScroll")
 
 	// SCROLL ON CLICK
-	
+
+	const SCROLL_DURATION = 1.5
 	// navbar buttons
 	document.querySelectorAll("nav button.scroll-to").forEach((btn, index) => {
 	    btn.addEventListener("click", () => {
-	      gsap.to(window, {duration: 1, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight - 1}});
+	      	gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight /*-1*/}});
 	    });
 	  });
 
 	// cards buttons 1st section
 	d("#btn-card__1").addEventListener("click",()=>{
-		gsap.to(window, {duration: 1, scrollTo:{ y:"#gallery_1" , offsetY: navbarHeight }});
+		gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{ y:"#gallery_1" , offsetY: navbarHeight }});
 	})
 	d("#btn-card__2").addEventListener("click",()=>{
-		gsap.to(window, {duration: 1, scrollTo:{ y:"#gallery_2" , offsetY: navbarHeight }});
+		gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{ y:"#gallery_2" , offsetY: navbarHeight }});
 	})
 
 
@@ -119,7 +120,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 						lastBtn.style.color = _i_color
 						lastBtn.blur()
 						lastBtn = btns[i]
-
 					}
 					farFromTopRatio = inscroll / heights[i]
 					log("inscroll ratio [" + i + "]" + farFromTopRatio )
@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	// GSAP OVERLAP PICTURES
 	gsap.registerPlugin(ScrollTrigger) 
 	
+	// gallery 1
 	gsap.set("#gallery_1 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
 	const animation_1 = gsap.to(" #gallery_1 .photo_showcase:not(:first-child)", {
 		y:"0%", opacity:1, scale:1, duration:1, stagger:1
@@ -168,6 +169,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		//markers:true
 	})
 
+	// gallery 2
 	gsap.set("#gallery_2 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
 	const animation_2 = gsap.to(" #gallery_2 .photo_showcase:not(:first-child)", {
 		y:"0%", opacity:1, scale:1, duration:1, stagger:1
@@ -179,6 +181,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 		end:"bottom bottom",
 		pin:"#showcase_pictures_container_2",
 		animation: animation_2,
+		scrub:true,
+		//markers:true
+	})
+
+	// gallery 3
+	gsap.set("#gallery_3 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	const animation_3 = gsap.to(" #gallery_3 .photo_showcase:not(:first-child)", {
+		y:"0%", opacity:1, scale:1, duration:1, stagger:1
+	})
+
+	ScrollTrigger.create({
+		trigger:"#gallery_3",
+		start:"top top",
+		end:"bottom bottom",
+		pin:"#showcase_pictures_container_3",
+		animation: animation_3,
 		scrub:true,
 		//markers:true
 	})
