@@ -61,14 +61,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	    });
 	  });
 
-	// cards buttons 1st section
+	  
+	// cards buttons scroll to
+
 	d("#btn-card__1").addEventListener("click",()=>{
 		gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{ y:"#gallery_1" , offsetY: navbarHeight }});
 	})
 	d("#btn-card__2").addEventListener("click",()=>{
 		gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{ y:"#gallery_2" , offsetY: navbarHeight }});
 	})
-
+	d("#btn-card__3").addEventListener("click",()=>{
+		gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{ y:"#gallery_3" , offsetY: navbarHeight }});
+	})
 
 	const heights = []
 	const tops = []
@@ -154,9 +158,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	gsap.registerPlugin(ScrollTrigger) 
 	
 	// gallery 1
-	gsap.set("#gallery_1 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	gsap.set("#gallery_1 .photo_showcase:not(:first-child)", {opacity:0, scale:0})
 	const animation_1 = gsap.to(" #gallery_1 .photo_showcase:not(:first-child)", {
-		y:"0%", opacity:1, scale:1, duration:1, stagger:1
+		 opacity:1, scale:1, duration:1, stagger:1
 	})
 
 	ScrollTrigger.create({
@@ -170,9 +174,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	})
 
 	// gallery 2
-	gsap.set("#gallery_2 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	gsap.set("#gallery_2 .photo_showcase:not(:first-child)", {opacity:0, scale:0,/* y:"100%"*/})
 	const animation_2 = gsap.to(" #gallery_2 .photo_showcase:not(:first-child)", {
-		y:"0%", opacity:1, scale:1, duration:1, stagger:1
+		/*y:"0%",*/ opacity:1, scale:1, duration:1, stagger:1
 	})
 
 	ScrollTrigger.create({
@@ -186,9 +190,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	})
 
 	// gallery 3
-	gsap.set("#gallery_3 .photo_showcase:not(:first-child)", {opacity:0.7, scale:0, y:"100%"})
+	gsap.set("#gallery_3 .photo_showcase:not(:first-child)", {opacity:0, scale:0, /*y:"100%"*/})
 	const animation_3 = gsap.to(" #gallery_3 .photo_showcase:not(:first-child)", {
-		y:"0%", opacity:1, scale:1, duration:1, stagger:1
+		/*y:"0%",*/ opacity:1, scale:1, duration:1, stagger:1
 	})
 
 	ScrollTrigger.create({
