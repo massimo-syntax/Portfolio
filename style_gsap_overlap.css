@@ -41,7 +41,6 @@
 }
 
 .showcase_headline h1 {
-  text-transform: capitalize;
   text-align: center;
   font-size: 2.8rem;
 }
@@ -87,7 +86,7 @@
 
 .showcase_details {
 	height:100vh;
-	width:80%;
+	width:90%;
 	/*outline:1px solid green;*/
 	display:flex;
 	flex-direction:column;
