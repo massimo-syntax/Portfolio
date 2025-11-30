@@ -246,7 +246,7 @@ setInterval(()=>{
     //  @
     //  @   PRINT 
 
-    result2 = print ( 
+    let result2 = print ( 
         WIDTH,
         HEIGHT,
         ELEMENTS_BUNCH,
@@ -256,15 +256,15 @@ setInterval(()=>{
     // CONSOLE.LOG() PRINTS THE WINDOW
     // console.log('\n',REPORT);
 
-    //console.log(result2.join(""));
+    console.log(result2.join(""));
 
+    // for browser
     for(var i = 0; i < result2.length; i++){
        result2[i] = result2[i].replace(' ', "&nbsp;");
     }
 
     result_string_for_div = result2.join("");
     
-    // for browser
     root.innerHTML = "";
     root.innerHTML = result_string_for_div;
 

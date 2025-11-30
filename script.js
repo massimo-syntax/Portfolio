@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 	// split text stagger animatino
 	const myText = new SplitType("#website_title > h2");
+
 	gsap.to("#website_title > h2 .char", {
 		opacity:1,
 		//stagger: 0.1,

@@ -92,14 +92,16 @@ p,a{
     margin-left:2rem;
     overflow: hidden;
     padding:1rem,0;
-    animation-name: fadeIn;
-    animation-duration: 1s;
+    /*animation-name: fadeIn;
+    animation-duration: 1s;*/
   }
 
   #website_title > h2{ 
     letter-spacing: .15rem;
     font-size: 2.5rem;
     margin:0;    
+    opacity: 1;
+    color: transparent;
   }
 
   #header-overlay{
@@ -133,10 +135,12 @@ p,a{
   #header_image_wrapper > figcaption {
     padding: 0rem 2rem 2rem 3rem;
     max-width: 40vw;
+    cursor: pointer;
   }
 
   #header_image_wrapper > figcaption h2{
     font-size: 3.5rem;
+    cursor: pointer;
   }
 
   #header_image_wrapper > figcaption h4{
@@ -186,11 +190,13 @@ p,a{
 	}
 
 
+
 /*  class used for gsap - #wbsite_title > h2  */
+
+
 #website_title > h2 .char {
-	/*transform: translatey(3em);
-	transition: all 0.5s; */
   opacity: 0;
+  color: var(--black);
   margin-right:.1em;
 }
 
@@ -212,18 +218,8 @@ p,a{
   }
 
 
-/*
-  .content {
-    padding:4rem;
-  }
-
-  */
-  section{
-    /*padding-top: 1rem;*/
-  }
-
   p{
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
 
@@ -394,7 +390,7 @@ nav a {
   -ms-align-items: center;
   align-items: center;
   justify-content: space-between;
-    -ms-flex-pack: distribute;
+  -ms-flex-pack: distribute;
 }
 
 nav a:hover {
@@ -415,6 +411,7 @@ footer{
   color: var(--blue-professional);
 }
 
+/*
 #footer-foo{
   position: relative;
   background-color: green;
@@ -423,14 +420,10 @@ footer{
   z-index: -1;
   margin-top: -1rem;
 }
+*/
 
 
 
-
-
-footer{
-
-}
 .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -456,7 +449,9 @@ footer{
  
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
 	margin: 0;
 }
  
