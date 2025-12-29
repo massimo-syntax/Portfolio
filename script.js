@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	// navbar buttons
 	document.querySelectorAll("nav button.scroll-to").forEach((btn, index) => {
 	    btn.addEventListener("click", () => {
-	      	gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight /*-1*/}});
+	      	gsap.to(window, {duration: SCROLL_DURATION, scrollTo:{y:"#"+sections[index].id, offsetY: navbarHeight -1}});
 	    });
 	  });
 

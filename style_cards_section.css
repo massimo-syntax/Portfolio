@@ -88,9 +88,10 @@ img.smartphone {
   list-style-type: none;
   padding: 0;
 }
+/*pictures at the side*/
 .photo-album li {
   float: left;
-  width: 55px;
+  width: 4.5rem;
   /*
   height: 55px;
   padding: 7px;
