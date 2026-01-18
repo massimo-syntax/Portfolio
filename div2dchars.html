@@ -44,10 +44,9 @@
 
 
 <script>
-
     const graficContainer = document.querySelector("#charsGraficElement")
 
-    var graficFontSize = parseFloat(Window.getComputedStyle(graficContainer).fontSize) ;
+    var graficFontSize = parseFloat(getComputedStyle(graficContainer).fontSize) ;
 
     const graficWidth = graficContainer.offsetWidth
     const graficHeight = graficContainer.offsetHeight
@@ -57,7 +56,6 @@
     const WIDTH =  Math.round ( (graficWidth / graficFontSize) * 1.65 ) 
     const HEIGHT =  Math.round ( (graficHeight / graficFontSize) * 0.84 )
 
-   
 </script> 
 
 
@@ -220,7 +218,7 @@ let i = 0;
 setInterval(()=>{
     OBJECTS.push(available[i]);
     i++;
-},200);
+},400);
 
 //  @
 //  @   SET CHARACHTER FORMING BACKGROUND
